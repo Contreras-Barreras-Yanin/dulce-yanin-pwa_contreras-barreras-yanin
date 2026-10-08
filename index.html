@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dulce Yanin — Repostería y pasteles</title>
+  <meta name="description" content="Dulce Yanin, repostería y pasteles en Hermosillo: pasteles completos, postres individuales y bebidas para tu antojo o tu evento.">
+  <meta name="theme-color" content="#7C2D12">
+
+  <!-- Se activan conforme existan los archivos (avances 2 y 3) -->
+  <!-- <link rel="manifest" href="manifest.json"> -->
+  <!-- <link rel="icon" href="icons/icon.svg" type="image/svg+xml"> -->
+
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Leaflet (se activa cuando exista geolocalizacion.js) -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"> -->
+</head>
+<body>
+
+  <!-- ============ APP SHELL ============
+       Esqueleto que siempre se ve igual: encabezado, zona del catálogo y pie.
+       Solo los productos de adentro los dibuja JavaScript (csr.js). -->
+
+  <header class="appbar">
+    <div class="marca">
+      <img src="img/logo.jpg" alt="Logo de Dulce Yanin" width="56" height="56">
+      <div>
+        <h1>Dulce Yanin</h1>
+        <p class="giro">Repostería y pasteles</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Nuestro menú</h2>
+      <!-- Empieza con tarjetas esqueleto; csr.js las reemplaza con los 15 productos -->
+      <div id="catalogo" class="grid" aria-busy="true" aria-label="Cargando catálogo">
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+        <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contacto">
+      <p>
+        <span class="icono" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c2d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </span>
+        Lunes a sábado · 9:00 AM – 7:00 PM
+      </p>
+      <p>
+        <span class="icono" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c2d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        Av. Sonora y Calle Jesús, Centro, Hermosillo, Sonora, México
+      </p>
+      <p>
+        <span class="icono" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c2d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <a href="https://wa.me/526621946789" target="_blank" rel="noopener">WhatsApp 66-21-94-67-89</a>
+      </p>
+      <p>
+        <span class="icono" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c2d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </span>
+        <a href="https://instagram.com/dulceyanin" target="_blank" rel="noopener">@dulceyanin</a>
+      </p>
+    </div>
+    <p class="firma">Dulce Yanin · Repostería y pasteles</p>
+  </footer>
+
+  <!-- Scripts: solo csr.js existe en el avance 1; los demás se activan después -->
+  <!-- <script src="js/carrito.js"></script> -->
+  <script src="js/csr.js"></script>
+  <!-- <script src="js/notificaciones.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script> -->
+  <!-- <script src="js/geolocalizacion.js"></script> -->
+  <!-- <script src="js/app.js"></script> -->
+  <!--
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then((registro) => console.log("Service Worker registrado con éxito:", registro.scope))
+        .catch((error) => console.error("No se pudo registrar el Service Worker:", error));
+    }
+  </script>
+  -->
+</body>
+</html>

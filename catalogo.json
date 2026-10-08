@@ -1,0 +1,17 @@
+[
+  { "id": 1, "nombre": "Tres leches", "categoria": "Pasteles completos", "precio": 420, "stock": 10, "imagen": "img/tres-leches.jpg" },
+  { "id": 2, "nombre": "Chocolate húmedo", "categoria": "Pasteles completos", "precio": 450, "stock": 8, "imagen": "img/chocolate-humedo.jpg" },
+  { "id": 3, "nombre": "Red velvet", "categoria": "Pasteles completos", "precio": 480, "stock": 8, "imagen": "img/red-velvet.jpg" },
+  { "id": 4, "nombre": "Zanahoria con nuez", "categoria": "Pasteles completos", "precio": 460, "stock": 6, "imagen": "img/zanahoria-con-nuez.jpg" },
+  { "id": 5, "nombre": "Cheesecake de frutos rojos", "categoria": "Pasteles completos", "precio": 520, "stock": 6, "imagen": "img/cheesecake-frutos-rojos.jpg" },
+  { "id": 6, "nombre": "Cupcake de vainilla", "categoria": "Postres individuales", "precio": 45, "stock": 30, "imagen": "img/cupcake-vainilla.jpg" },
+  { "id": 7, "nombre": "Brownie con nuez", "categoria": "Postres individuales", "precio": 40, "stock": 30, "imagen": "img/brownie-nuez.jpg" },
+  { "id": 8, "nombre": "Pay de limón", "categoria": "Postres individuales", "precio": 55, "stock": 20, "imagen": "img/pay-limon.jpg" },
+  { "id": 9, "nombre": "Flan napolitano", "categoria": "Postres individuales", "precio": 50, "stock": 20, "imagen": "img/flan-napolitano.jpg" },
+  { "id": 10, "nombre": "Galleta de chispas", "categoria": "Postres individuales", "precio": 35, "stock": 40, "imagen": "img/galleta-chispas.jpg" },
+  { "id": 11, "nombre": "Café americano", "categoria": "Bebidas", "precio": 35, "stock": 50, "imagen": "img/cafe-americano.jpg" },
+  { "id": 12, "nombre": "Capuchino", "categoria": "Bebidas", "precio": 55, "stock": 50, "imagen": "img/capuchino.jpg" },
+  { "id": 13, "nombre": "Chocolate caliente", "categoria": "Bebidas", "precio": 50, "stock": 50, "imagen": "img/chocolate-caliente.jpg" },
+  { "id": 14, "nombre": "Frappé de galleta", "categoria": "Bebidas", "precio": 75, "stock": 40, "imagen": "img/frappe-galleta.jpg" },
+  { "id": 15, "nombre": "Leche con fresa", "categoria": "Bebidas", "precio": 40, "stock": 40, "imagen": "img/leche-fresa.jpg" }
+]
