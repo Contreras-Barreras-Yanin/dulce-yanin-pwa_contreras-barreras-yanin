@@ -8,7 +8,7 @@
   <meta name="theme-color" content="#7C2D12">
   <link rel="icon" href="data:,">
 
-  <!-- Se activan conforme existan los archivos (avances 2 y 3) -->
+  <!-- Se activan conforme existan los archivos (avance 3) -->
   <!-- <link rel="manifest" href="manifest.json"> -->
   <!-- <link rel="icon" href="icons/icon.svg" type="image/svg+xml"> -->
 
@@ -55,6 +55,15 @@
         <div class="producto producto--cargando" aria-hidden="true"><div class="producto__foto"></div><strong>&nbsp;</strong> <span class="precio">&nbsp;</span> <p>&nbsp;</p><button type="button" disabled>Agregar</button></div>
       </div>
     </section>
+
+    <!-- ---- Carrito (carrito.js lo llena y lo guarda en localStorage) ---- -->
+    <section>
+      <h2>Carrito</h2>
+      <ul id="carrito-lista"></ul>
+      <p>Total: $<span id="carrito-total">0</span></p>
+      <button id="btn-sincronizar" type="button">Sincronizar carrito</button>
+      <p id="carrito-mensaje" class="mensaje"></p>
+    </section>
   </main>
 
   <footer>
@@ -87,8 +96,8 @@
     <p class="firma">Dulce Yanin · Repostería y pasteles</p>
   </footer>
 
-  <!-- Scripts: solo csr.js existe en el avance 1; los demás se activan después -->
-  <!-- <script src="js/carrito.js"></script> -->
+  <!-- Scripts: carrito.js va ANTES de csr.js porque csr.js usa agregarAlCarrito() -->
+  <script src="js/carrito.js"></script>
   <script src="js/csr.js"></script>
   <!-- <script src="js/notificaciones.js"></script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script> -->

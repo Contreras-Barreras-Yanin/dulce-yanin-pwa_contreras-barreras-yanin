@@ -200,6 +200,74 @@ button {
 }
 button:hover { background: var(--cafe-oscuro); }
 
+/* ===== Carrito ===== */
+.mensaje {
+  min-height: 1.2em;
+  font-size: .9rem;
+  color: var(--cafe);
+}
+
+#carrito-lista {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+/* Cada renglón: nombre / cantidad (con - y +) / precio / quitar */
+#carrito-lista li {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: .6rem;
+  padding: .6rem 0;
+  border-bottom: 2px dashed var(--borde);
+}
+.carrito-nombre { font-weight: 600; }
+
+.carrito-cantidad {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+/* Los botones del carrito son chiquitos (no ocupan todo el ancho) */
+.carrito-cantidad button {
+  width: auto;
+  margin-top: 0;
+  padding: .1rem .65rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.carrito-cantidad__valor {
+  min-width: 1.4rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-weight: bold;
+}
+
+.carrito-precio {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.carrito-quitar {
+  width: auto;
+  margin-top: 0;
+  padding: .25rem .8rem;
+  font-size: .8rem;
+  background: transparent;
+  color: var(--cafe);
+  border: 2px solid var(--rosa);
+}
+.carrito-quitar:hover {
+  background: var(--rosa-claro);
+  color: var(--cafe);
+}
+
+#carrito-lista + p {
+  font-family: var(--titulos);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 /* ===== Pie de página: cápsula como en tu menú ===== */
 footer {
   background: var(--rosa-claro);
@@ -264,4 +332,17 @@ footer {
   .marca img { width: 48px; height: 48px; }
   .marca h1 { font-size: 1.6rem; }
   .giro { font-size: .7rem; letter-spacing: .08em; }
+
+  /* Carrito en celular: dos columnas para que no se encimen los botones */
+  #carrito-lista li {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "nombre nombre"
+      "cantidad precio"
+      "quitar quitar";
+  }
+  .carrito-nombre { grid-area: nombre; }
+  .carrito-cantidad { grid-area: cantidad; }
+  .carrito-precio { grid-area: precio; justify-self: end; }
+  .carrito-quitar { grid-area: quitar; justify-self: start; }
 }
