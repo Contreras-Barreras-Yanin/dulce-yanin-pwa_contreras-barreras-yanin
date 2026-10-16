@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Catálogo SSR — Dulce Yanin</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #fff5f9; color: #7c2d12; margin: 2rem; }
+    h1 { color: #e85d93; }
+    h2 { color: #e85d93; border-bottom: 2px dashed #e85d93; padding-bottom: .3rem; }
+    ul { list-style: none; padding: 0; }
+    li { background: #fff; border: 1px solid #f6c9db; border-radius: 8px; padding: .6rem 1rem; margin-bottom: .5rem; }
+    .precio { font-weight: bold; color: #e85d93; }
+  </style>
+</head>
+<body>
+  <h1>Dulce Yanin - Catálogo renderizado en el servidor (SSR)</h1>
+  <p>Este HTML ya viene con los productos escritos. Presiona Ctrl+U y busca el nombre de cualquier producto.</p>
+
+  {% regroup productos by categoria as grupos %}
+  {% for grupo in grupos %}
+    <h2>{{ grupo.grouper }}</h2>
+    <ul>
+      {% for producto in grupo.list %}
+        <li>
+          <strong>{{ producto.nombre }}</strong> -
+          <span class="precio">${{ producto.precio }} MXN</span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</body>
+</html>
