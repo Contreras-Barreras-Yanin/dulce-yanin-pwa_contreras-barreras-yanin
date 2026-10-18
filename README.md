@@ -24,3 +24,14 @@
 
 ### CSR (JavaScript): el div del catálogo llega vacío
 ![Código fuente CSR](docs/captura-csr.png)
+## Cómo correr servidor-ssr (Django)
+
+Desde la raíz del repositorio, en PowerShell:
+
+    cd servidor-ssr
+    python -m venv venv
+    venv\Scripts\activate
+    pip install -r requirements.txt
+    python manage.py runserver
+
+Luego abre http://127.0.0.1:8000/catalogo/ y presiona Ctrl+U: los 15 productos de Dulce Yanin aparecen escritos en el HTML (SSR).
