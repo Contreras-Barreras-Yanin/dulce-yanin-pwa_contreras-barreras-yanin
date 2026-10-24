@@ -17,6 +17,7 @@ function guardarCarrito(carrito) {
 
 // Agrega un producto al carrito (o le sube la cantidad si ya estaba)
 function agregarAlCarrito(producto) {
+  if (typeof notificarProductoAgregado === "function") notificarProductoAgregado(producto.nombre);
   const carrito = leerCarrito();
   const existente = carrito.find((item) => item.id === producto.id);
 
@@ -108,6 +109,7 @@ function sincronizarCarrito() {
   }
 
   // Aquí iría: fetch("https://mi-api.com/carrito", { method: "POST", body: ... })
+  if (typeof notificarCarritoSincronizado === "function") notificarCarritoSincronizado();
   mensaje.textContent = "Carrito sincronizado con el servidor (simulado). ✓";
 }
 
