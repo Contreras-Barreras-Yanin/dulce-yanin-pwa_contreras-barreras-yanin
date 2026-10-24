@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/estilos.css">
 
   <!-- Leaflet (se activa cuando exista geolocalizacion.js) -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 </head>
 <body>
 
@@ -72,6 +72,15 @@
       <button id="btn-notificar" type="button">Activar notificaciones</button>
       <p id="notificaciones-mensaje" class="mensaje"></p>
     </section>
+  
+    <!-- ---- Ubicación y ruta (geolocalizacion.js) ---- -->
+    <section>
+      <h2>Cómo llegar</h2>
+      <p>Comparte tu ubicación para ver la ruta hasta Dulce Yanin.</p>
+      <button id="btn-ubicacion" type="button">Ver ruta a la sucursal</button>
+      <p id="ubicacion-mensaje" class="mensaje"></p>
+      <div id="mapa-ruta" hidden></div>
+    </section>
   </main>
 
   <footer>
@@ -108,8 +117,8 @@
   <script src="js/carrito.js"></script>
   <script src="js/csr.js"></script>
   <script src="js/notificaciones.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script> -->
-  <!-- <script src="js/geolocalizacion.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="js/geolocalizacion.js"></script>
   <!-- <script src="js/app.js"></script> -->
   <!--
   <script>

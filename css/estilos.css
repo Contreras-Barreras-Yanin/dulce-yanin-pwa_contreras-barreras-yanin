@@ -346,3 +346,11 @@ footer {
   .carrito-precio { grid-area: precio; justify-self: end; }
   .carrito-quitar { grid-area: quitar; justify-self: start; }
 }
+/* ===== Mapa de la ruta (Leaflet) ===== */
+[hidden] { display: none !important; }
+#mapa-ruta {
+  height: 320px;
+  margin-top: .75rem;
+  border: 2px solid var(--borde);
+  border-radius: 14px;
+}
