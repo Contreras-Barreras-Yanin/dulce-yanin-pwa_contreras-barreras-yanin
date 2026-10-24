@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "Dulce Yanin - Repostería y pasteles",
+  "short_name": "Dulce Yanin",
+  "description": "Pasteles completos, postres individuales y bebidas de Dulce Yanin, Hermosillo.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "categories": ["food", "shopping"],
+  "background_color": "#FDF2F8",
+  "theme_color": "#7C2D12",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
