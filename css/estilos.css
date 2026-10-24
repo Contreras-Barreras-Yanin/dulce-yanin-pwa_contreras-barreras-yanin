@@ -354,3 +354,18 @@ footer {
   border: 2px solid var(--borde);
   border-radius: 14px;
 }
+/* ===== Estado de conexión ===== */
+.estado-conexion {
+  display: inline-block;
+  margin-top: .35rem;
+  padding: .1rem .7rem;
+  border-radius: 999px;
+  background: #d1fae5;
+  color: #065f46;
+  font-size: .75rem;
+  font-weight: 700;
+}
+.estado-conexion.sin-conexion {
+  background: #fee2e2;
+  color: #991b1b;
+}
