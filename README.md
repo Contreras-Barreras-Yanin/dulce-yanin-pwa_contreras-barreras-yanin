@@ -14,7 +14,7 @@
 |---|---|---|
 | 1 | 906088a03ccb1043274d0733292c393a7d825c0b | 11/10/2026 |
 | 2 | 148d8d7b43d6e413e9ec3d56913f4dc5f4bae57f | 18/10/2026 |
-| 3 | (hash del avance 3) | 25/10/2026 |
+| 3 | d65e4c3ed0998b3b11930c876a875bef9b0f835f | 25/10/2026 |
 | 4 | (se escribe en el reporte PDF) | 01/11/2026 |
 
 ## Comparación SSR vs CSR
