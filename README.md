@@ -33,6 +33,50 @@
 ### sw.js: Workbox precachea el catálogo y las fotos
 ![Código fuente sw.js](docs/captura-sw.png)
 
+## Versión publicada (avance 4)
+
+### index.html en GitHub Pages
+![Código fuente publicado](docs/captura-pages-index.png)
+
+### manifest.json en GitHub Pages
+![manifest.json publicado](docs/captura-pages-manifest.png)
+
+### Mi app instalada en el celular
+![App instalada en el celular](docs/captura-celular.png)
+
+## Guía de instalación y uso
+
+### 1. Cómo abrir la app
+1. Abre Chrome (o Edge) en tu celular o en tu computadora, con internet.
+2. Escribe esta dirección y presiona Enter: https://contreras-barreras-yanin.github.io/dulce-yanin-pwa_contreras-barreras-yanin/
+3. Espera a que cargue el catálogo de Dulce Yanin con sus 15 productos.
+
+### 2. Cómo instalarla
+**En Android (Chrome):**
+1. Abre la dirección de la app en Chrome.
+2. Toca el menú de tres puntos (⋮), arriba a la derecha.
+3. Elige "Instalar app" (o "Agregar a la pantalla principal").
+4. Toca "Instalar". El ícono de Dulce Yanin aparece en tu pantalla de inicio.
+
+**En iPhone (Safari):**
+1. Abre la dirección de la app en Safari.
+2. Toca el botón Compartir.
+3. Elige "Agregar a pantalla de inicio" y toca "Agregar".
+
+**En computadora (Chrome o Edge):**
+1. Abre la dirección de la app.
+2. Haz clic en el ícono de instalar que aparece a la derecha de la barra de direcciones.
+3. Haz clic en "Instalar".
+
+Después de instalarla, ábrela desde su ícono: se ve a pantalla completa, sin la barra de direcciones del navegador.
+
+### 3. Cómo usarla
+- **Catálogo:** hay 15 productos en tres categorías (Pasteles completos, Postres individuales y Bebidas), cada uno con foto, descripción y precio.
+- **Carrito:** toca "Agregar" en un producto. En la sección Carrito puedes subir o bajar la cantidad con + y −, quitar un producto con "Quitar" y ver el total. El carrito se guarda en tu navegador y sigue ahí aunque cierres la app.
+- **Notificaciones:** toca "Activar notificaciones" y acepta el permiso. Al agregar un producto te aparece el aviso "Pedido agregado".
+- **Cómo llegar:** en "Cómo llegar" toca "Ver ruta a la sucursal" y acepta el permiso de ubicación. Se muestra el mapa con la distancia y el tiempo hasta Dulce Yanin, en Av. Sonora y Calle Jesús García, Centro, Hermosillo.
+- **Sin internet:** el catálogo y las fotos siguen disponibles. La etiqueta de arriba cambia a "sin conexión" y, cuando regresa el internet, el carrito se sincroniza y te avisa.
+
 ## Cómo correr servidor-ssr (Django)
 
 Desde la raíz del repositorio, en PowerShell:
